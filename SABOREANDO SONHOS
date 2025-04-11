@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L.F Luzia & Fernanda Saboreando Sonhos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>L.F Luzia & Fernanda Saboreando Sonhos</h1>
+        <p>Slogan: Saboreando Sonhos</p>
+        <p>WhatsApp: <a href="https://wa.me/84998477906" target="_blank">84 99847-7906</a></p>
+    </header>
+
+    <!-- Produtos -->
+    <section class="products">
+        <div class="product" onclick="showPopup('cachorroQuente')">
+            <img src="cachorro-quente.jpg" alt="Cachorro-Quente">
+            <p>Cachorro-Quente</p>
+            <p>R$ 6,00</p>
+            <div class="product-info" id="cachorroQuente">
+                <p>Ingredientes: Pão, salsicha, frango, carne moída, milho, ervilha, batata palha</p>
+            </div>
+        </div>
+
+        <div class="product" onclick="showPopup('bauru')">
+            <img src="bauru.jpg" alt="Bauru">
+            <p>Bauru</p>
+            <p>R$ 8,00</p>
+            <div class="product-info" id="bauru">
+                <p>Ingredientes: Pão, hambúrguer, ovo, queijo, presunto, tomate, alface</p>
+            </div>
+        </div>
+
+        <!-- Mais produtos aqui... -->
+    </section>
+
+    <!-- Combos -->
+    <section class="section-title">Combos Especiais</section>
+    <section class="combos">
+        <div class="combo" onclick="showPopup('combo1')">
+            <img src="combo1.jpg" alt="Combo 1">
+            <p>Combo 1: 3 Cachorros-Quentes</p>
+            <p>R$ 15,00</p>
+            <div class="combo-info" id="combo1">
+                <p>Inclui: 3 Cachorros-Quentes</p>
+            </div>
+        </div>
+
+        <!-- Mais combos aqui... -->
+    </section>
+
+    <!-- Popup -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span id="popup-text"></span>
+            <button class="popup-button" onclick="closePopup()">Fechar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
